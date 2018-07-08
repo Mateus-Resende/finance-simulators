@@ -1,0 +1,20 @@
+{
+  "name": "finance_simulators",
+  "version": "1.0.0",
+  "description": "Simuladores financeiros para o blog Me Poupe!",
+  "author": "Mateus Resende <mateus.rsnd@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "./node_modules/mocha/bin/mocha lib/**/*.test.js"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "standard": "^11.0.1"
+  },
+  "dependencies": {
+    "big.js": "^5.1.2",
+    "financejs": "^4.1.0"
+  }
+}
