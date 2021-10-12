@@ -1,24 +1,29 @@
 {
   "name": "finance_simulators",
   "version": "1.0.0",
-  "description": "Simuladores financeiros para o blog Me Poupe!",
+  "description": "Funções de cálculos de finanças",
   "author": "Mateus Resende <mateus.rsnd@gmail.com>",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "test": "./node_modules/mocha/bin/mocha lib/**/*.test.js",
-    "watch": "./node_modules/mocha/bin/mocha --watch lib/**/*.test.js",
-    "debug": "./node_modules/mocha/bin/mocha --watch lib/**/*.test.js --debug-brk --inspect"
+    "test": "jest lib/**/*.test.js",
+    "watch": "mocha --watch lib/**/*.test.js",
+    "debug": "mocha --watch lib/**/*.test.js --debug-brk --inspect",
+    "lint": "standard"
   },
   "devDependencies": {
-    "chai": "^4.1.2",
-    "mocha": "^5.2.0",
-    "standard": "^11.0.1"
+    "standard": "^16.0.4"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "test",
+      "expect"
+    ]
   },
   "dependencies": {
-    "big-integer": "^1.6.32",
     "business-days-calculator": "^2.2.0",
-    "financejs": "^4.1.0",
-    "holidays-calendar-brazil": "^1.0.2"
+    "holidays-calendar-brazil": "^1.0.2",
+    "jest": "^27.2.5"
   }
 }

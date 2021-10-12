@@ -1,4 +1,4 @@
-let Simulator = {}
+const Simulator = {}
 
 Simulator.compoundInterest = require('./lib/compoundInterest')
 Simulator.lciPrefixed = require('./lib/lci/prefixed')
