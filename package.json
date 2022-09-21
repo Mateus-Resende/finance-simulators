@@ -12,7 +12,8 @@
     "lint": "standard"
   },
   "devDependencies": {
-    "standard": "^16.0.4"
+    "jest": "^29.0.3",
+    "standard": "^17.0.0"
   },
   "standard": {
     "globals": [
@@ -23,7 +24,6 @@
   },
   "dependencies": {
     "business-days-calculator": "^2.2.0",
-    "holidays-calendar-brazil": "^1.0.2",
-    "jest": "^27.2.5"
+    "holidays-calendar-brazil": "^1.0.2"
   }
 }
